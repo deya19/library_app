@@ -8,6 +8,20 @@
       "when": 1737401723513,
       "tag": "0000_rapid_magma",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1739004910591,
+      "tag": "0001_first_juggernaut",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1739633755763,
+      "tag": "0002_daily_ikaris",
+      "breakpoints": true
     }
   ]
 }

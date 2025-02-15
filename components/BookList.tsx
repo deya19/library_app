@@ -1,5 +1,5 @@
-import React from 'react';
-import BookCard from './BookCard';
+import React from "react";
+import BookCard from "./BookCard";
 
 interface Props {
   title: string;
@@ -7,16 +7,18 @@ interface Props {
   containerClassName?: string;
 }
 
-export default function BookList({title, books, containerClassName}: Props) {
+export default function BookList({ title, books, containerClassName }: Props) {
+  if (books.length < 2) return;
+
   return (
     <section className={containerClassName}>
-    <h2 className="font-bebas-neue text-4xl text-light-100">{title}</h2>
+      <h2 className="font-bebas-neue text-4xl text-light-100">{title}</h2>
 
-    <ul className="book-list">
-      {books.map((book) => (
-        <BookCard key={book.title} {...book} />
-      ))}
-    </ul>
-  </section>
-  )
+      <ul className="book-list">
+        {books.map((book) => (
+          <BookCard key={book.title} {...book} />
+        ))}
+      </ul>
+    </section>
+  );
 }
